@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/client/css/all.min.css" />
+    <link rel="stylesheet" href="/client/css/styles.css" />
+    <script src="/client/js/chart.min.js"></script>
+    <title>Charts Data</title>
+  </head>
+  <body>
+    <div class="campaign">
+      <p>
+        In support of the paperless world campaign
+        <i class="fas fa-paper-plane"></i>
+      </p>
+    </div>
+    <header id="__header">
+      <a href="index.html" id="logo"
+        ><i class="fas fa-hand-holding-water"></i> Covid
+        <i class="fas fa-briefcase-medical"></i> Register</a
+      >
+      <nav class="navbar">
+        <ul>
+          <li>
+            <a href="index.html">home <i class="fas fa-home"></i></a>
+          </li>
+          <li>
+            <a href="new-entry.html">new entry <i class="fas fa-edit"></i></a>
+          </li>
+          <li>
+            <a href="entries-list.html"
+              >entries list <i class="fas fa-list"></i
+            ></a>
+          </li>
+          <li>
+            <a href="charts.html">reports <i class="fas fa-chart-line"></i></a>
+          </li>
+          <li>
+            <a href="employees.html">Employees <i class="fas fa-users"></i></a>
+          </li>
+          <div class="login-nav">
+            <a href="login.html" class="btn btn-login show">Log in</a>
+            <a href="#" class="btn btn-logout hide">Log out</a>
+          </div>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="chart-section">
+      <div class="authorized-modal hide">
+        <div class="authorized-content">
+          <i class="fas fa-times-circle"></i>
+          <p>
+            You are not Authorized to access content of this page. Please Login.
+          </p>
+          <a href="login.html" class="btn">Log In</a>
+        </div>
+      </div>
+      <div class="modal hide">
+        <i class="fas fa-times-circle"></i>
+        <p class="modal-msg"></p>
+      </div>
+      <div class="chart-header">
+        <h4>Reports</h4>
+        <div class="filter-section">
+          <div class="radios">
+            <div class="radio-box">
+              <label for="temperatures">Temperature Chart</label>
+              <input
+                type="radio"
+                name="charts-categories"
+                id=""
+                class="temperatures"
+              />
+            </div>
+            <div class="radio-box">
+              <label for="visitors">Visitors Chart</label>
+              <input
+                type="radio"
+                name="charts-categories"
+                id=""
+                class="visitors"
+              />
+            </div>
+          </div>
+          <div class="dates">
+            <h4>Date Range</h4>
+            <div class="date-inputs-container">
+              <input type="date" name="" id="" class="initial-date" />
+              <input type="date" name="" id="" class="last-date" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="chart-container">
+        <canvas class="report-chart"></canvas>
+      </div>
+    </section>
+    <script src="/client/js/reports.js"></script>
+  </body>
+</html>

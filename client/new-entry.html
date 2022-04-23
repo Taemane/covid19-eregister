@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/client/css/all.min.css" />
+    <link rel="stylesheet" href="/client/css/styles.css" />
+    <title>New Entry</title>
+  </head>
+  <body>
+    <div class="campaign">
+      <p>
+        In support of the paperless world campaign
+        <i class="fas fa-paper-plane"></i>
+      </p>
+    </div>
+    <header id="__header">
+      <a href="index.html" id="logo"
+        ><i class="fas fa-hand-holding-water"></i> Covid
+        <i class="fas fa-briefcase-medical"></i> Register</a
+      >
+      <nav class="navbar">
+        <ul>
+          <li>
+            <a href="index.html">home <i class="fas fa-home"></i></a>
+          </li>
+          <li>
+            <a href="new-entry.html">new entry <i class="fas fa-edit"></i></a>
+          </li>
+          <li>
+            <a href="entries-list.html"
+              >entries list <i class="fas fa-list"></i
+            ></a>
+          </li>
+          <li>
+            <a href="charts.html">reports <i class="fas fa-chart-line"></i></a>
+          </li>
+          <li>
+            <a href="employees.html">Employees <i class="fas fa-users"></i></a>
+          </li>
+          <div class="login-nav">
+            <a href="login.html" class="btn btn-login show">Log in</a>
+            <a href="#" class="btn btn-logout hide">Log out</a>
+          </div>
+        </ul>
+      </nav>
+    </header>
+    <section class="new-entry">
+      <div class="modal hide">
+        <i class="fas fa-times-circle"></i>
+        <p class="modal-msg"></p>
+      </div>
+      <div class="entry-container">
+        <div class="search-results hide">
+          <i class="fas fa-caret-right"></i>
+          <div class="results"></div>
+        </div>
+        <h1>New Entry</h1>
+        <form action="" class="search-form">
+          <h4>For employees only</h4>
+          <input
+            type="number"
+            name=""
+            id=""
+            class="search-contact"
+            placeholder="Search contact here"
+          />
+        </form>
+        <form action="" class="entry-form">
+          <div class="personal-details">
+            <input type="text" placeholder="Names" class="names" />
+            <input
+              type="number"
+              placeholder="Cell Number"
+              class="cell-numbers"
+            />
+          </div>
+          <div class="questions">
+            <div class="each-question">
+              <label for="">Fever?</label>
+              <input type="checkbox" name="" id="" class="question_1" />
+            </div>
+            <div class="each-question">
+              <label for="">Cough?</label>
+              <input type="checkbox" name="" id="" class="question_2" />
+            </div>
+            <div class="each-question">
+              <label for="">Shortness of breath?</label>
+              <input type="checkbox" name="" id="" class="question_3" />
+            </div>
+            <div class="each-question">
+              <label for="">Sore throat?</label>
+              <input type="checkbox" name="" id="" class="question_4" />
+            </div>
+            <div class="each-question">
+              <label for="">Loss of sense of smell?</label>
+              <input type="checkbox" name="" id="" class="question_5" />
+            </div>
+            <div class="each-question">
+              <label for="">Changes in sense of taste?</label>
+              <input type="checkbox" name="" id="" class="question_6" />
+            </div>
+            <div class="each-question">
+              <label for=""
+                >In the past 2 weeks, have you been told that you have
+                COVID-19?</label
+              >
+              <input type="checkbox" name="" id="" class="question_7" />
+            </div>
+            <div class="each-question">
+              <label for="">Are you waiting for a COVID-19 test results?</label>
+              <input type="checkbox" name="" id="" class="question_8" />
+            </div>
+          </div>
+          <div class="last-section">
+            <div class="each-question">
+              <label for="">Are you vaccinated?</label>
+              <input type="checkbox" name="" id="" class="vaccinated" />
+            </div>
+            <input
+              type="text"
+              name=""
+              class="temperature"
+              placeholder="Temperature"
+            />
+          </div>
+          <div class="save">
+            <button class="save-btn btn">Save</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <script src="/client/js/new-entry.js"></script>
+  </body>
+</html>
